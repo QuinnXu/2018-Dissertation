@@ -1,3 +1,3 @@
 # 2018-Dissertation
-drag .json in kepler_design file to http://kepler.gl/#/demo
+drag /kepler_gl_design/house-price-version-1.0.json to http://kepler.gl/#/demo
 adjust configure
