@@ -1,0 +1,616 @@
+{
+  "version": "v1",
+  "config": {
+    "visState": {
+      "filters": [],
+      "layers": [
+        {
+          "id": "k4pki1b",
+          "type": "point",
+          "config": {
+            "dataId": "2z77qxzrv",
+            "label": "House location",
+            "color": [
+              255,
+              254,
+              230
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon",
+              "altitude": null
+            },
+            "isVisible": false,
+            "visConfig": {
+              "radius": 3,
+              "fixedRadius": false,
+              "opacity": 0.94,
+              "outline": false,
+              "thickness": 0.2,
+              "colorRange": {
+                "name": "Global Warming",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#5A1846",
+                  "#900C3F",
+                  "#C70039",
+                  "#E3611C",
+                  "#F1920E",
+                  "#FFC300"
+                ]
+              },
+              "radiusRange": [
+                0,
+                50
+              ],
+              "hi-precision": true
+            }
+          },
+          "visualChannels": {
+            "colorField": null,
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "gunfhx",
+          "type": "hexagon",
+          "config": {
+            "dataId": "2z77qxzrv",
+            "label": "House Price Overall",
+            "color": [
+              23,
+              184,
+              190
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": true,
+            "visConfig": {
+              "opacity": 0.51,
+              "worldUnitSize": 0.2,
+              "resolution": 8,
+              "colorRange": {
+                "name": "Global Warming",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#5A1846",
+                  "#900C3F",
+                  "#C70039",
+                  "#E3611C",
+                  "#F1920E",
+                  "#FFC300"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.81,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0.43,
+                99.11
+              ],
+              "elevationPercentile": [
+                0.03,
+                100
+              ],
+              "elevationScale": 2.5,
+              "hi-precision": true,
+              "colorAggregation": "average",
+              "sizeAggregation": "count",
+              "enable3d": true
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantize",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "094ny9",
+          "type": "hexagon",
+          "config": {
+            "dataId": "2z77qxzrv",
+            "label": "House_Price Detail",
+            "color": [
+              18,
+              147,
+              154
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "worldUnitSize": 0.01,
+              "resolution": 8,
+              "colorRange": {
+                "name": "Global Warming",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#5A1846",
+                  "#900C3F",
+                  "#C70039",
+                  "#E3611C",
+                  "#F1920E",
+                  "#FFC300"
+                ]
+              },
+              "coverage": 0.43,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 0.8,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "average",
+              "enable3d": true
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "36nf6dq",
+          "type": "geojson",
+          "config": {
+            "dataId": "pnw8jiudt",
+            "label": "Education",
+            "color": [
+              255,
+              254,
+              230,
+              255
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": true,
+            "visConfig": {
+              "opacity": 0.15,
+              "thickness": 0.1,
+              "colorRange": {
+                "name": "Uber Viz Sequential 2",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#E6FAFA",
+                  "#AAD7DA",
+                  "#68B4BB",
+                  "#00939C"
+                ],
+                "reversed": false
+              },
+              "radius": 10,
+              "sizeRange": [
+                0.8,
+                1.5
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 0.1,
+              "hi-precision": true,
+              "stroked": false,
+              "filled": true,
+              "enable3d": false,
+              "wireframe": true
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "Education, Skills and Training Score",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": {
+              "name": "Crime Score",
+              "type": "integer"
+            },
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        },
+        {
+          "id": "x8br60p",
+          "type": "geojson",
+          "config": {
+            "dataId": "pnw8jiudt",
+            "label": "Environment",
+            "color": [
+              255,
+              203,
+              153
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.15,
+              "thickness": 0.2,
+              "colorRange": {
+                "name": "ColorBrewer Greens-4",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#edf8e9",
+                  "#bae4b3",
+                  "#74c476",
+                  "#238b45"
+                ],
+                "reversed": false
+              },
+              "radius": 10,
+              "sizeRange": [
+                0,
+                10
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "stroked": false,
+              "filled": true,
+              "enable3d": false,
+              "wireframe": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "Living Environment Score ",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        },
+        {
+          "id": "730qw3",
+          "type": "heatmap",
+          "config": {
+            "dataId": "2z77qxzrv",
+            "label": "Price heatmap",
+            "color": [
+              255,
+              203,
+              153
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 1,
+              "colorRange": {
+                "name": "ColorBrewer YlOrRd-8",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#ffffcc",
+                  "#ffeda0",
+                  "#fed976",
+                  "#feb24c",
+                  "#fd8d3c",
+                  "#fc4e2a",
+                  "#e31a1c",
+                  "#b10026"
+                ],
+                "reversed": false
+              },
+              "radius": 34.7
+            }
+          },
+          "visualChannels": {
+            "weightField": null,
+            "weightScale": "linear"
+          }
+        },
+        {
+          "id": "ssb84nu",
+          "type": "geojson",
+          "config": {
+            "dataId": "pnw8jiudt",
+            "label": "Income",
+            "color": [
+              255,
+              153,
+              31
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.15,
+              "thickness": 2,
+              "colorRange": {
+                "name": "ColorBrewer Purples-4",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#f2f0f7",
+                  "#cbc9e2",
+                  "#9e9ac8",
+                  "#6a51a3"
+                ],
+                "reversed": false
+              },
+              "radius": 10,
+              "sizeRange": [
+                0,
+                10
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 5,
+              "hi-precision": true,
+              "stroked": false,
+              "filled": true,
+              "enable3d": false,
+              "wireframe": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "Income Score",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        },
+        {
+          "id": "cd14abl",
+          "type": "geojson",
+          "config": {
+            "dataId": "pnw8jiudt",
+            "label": "Crime",
+            "color": [
+              248,
+              149,
+              112,
+              255
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.26,
+              "thickness": 2,
+              "colorRange": {
+                "name": "ColorBrewer Reds-4",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#fee5d9",
+                  "#fcae91",
+                  "#fb6a4a",
+                  "#cb181d"
+                ],
+                "reversed": false
+              },
+              "radius": 10,
+              "sizeRange": [
+                0,
+                10
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "stroked": false,
+              "filled": true,
+              "enable3d": false,
+              "wireframe": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "Crime Score",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        },
+        {
+          "id": "y42sekn",
+          "type": "geojson",
+          "config": {
+            "dataId": "pnw8jiudt",
+            "label": "Health",
+            "color": [
+              30,
+              150,
+              190,
+              255
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.19,
+              "thickness": 2,
+              "colorRange": {
+                "name": "ColorBrewer Accent-4",
+                "type": "qualitative",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#7fc97f",
+                  "#beaed4",
+                  "#fdc086",
+                  "#ffff99"
+                ],
+                "reversed": false
+              },
+              "radius": 10,
+              "sizeRange": [
+                0,
+                10
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "stroked": false,
+              "filled": true,
+              "enable3d": false,
+              "wireframe": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "Health Deprivation and Disability Score",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        }
+      ],
+      "interactionConfig": {
+        "tooltip": {
+          "fieldsToShow": {
+            "pnw8jiudt": [
+              "Crime Score",
+              "Education, Skills and Training Score",
+              "Health Deprivation and Disability Score",
+              "Income Score"
+            ],
+            "2z77qxzrv": [
+              "des",
+              "id",
+              "price"
+            ]
+          },
+          "enabled": true
+        },
+        "brush": {
+          "size": 49.7,
+          "enabled": false
+        }
+      },
+      "layerBlending": "normal",
+      "splitMaps": []
+    },
+    "mapState": {
+      "bearing": -179.75,
+      "dragRotate": true,
+      "latitude": 52.964264149240506,
+      "longitude": -1.1592038562009517,
+      "pitch": 41.41586023425384,
+      "zoom": 11.718275907197008,
+      "isSplit": false
+    },
+    "mapStyle": {
+      "styleType": "dark",
+      "topLayerGroups": {
+        "land": false,
+        "water": false,
+        "building": false,
+        "road": false,
+        "label": true,
+        "border": false
+      },
+      "visibleLayerGroups": {
+        "label": true,
+        "road": true,
+        "border": true,
+        "building": true,
+        "water": true,
+        "land": true
+      },
+      "mapStyles": {}
+    }
+  }
+}
