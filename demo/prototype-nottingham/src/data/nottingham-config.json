@@ -1,0 +1,1132 @@
+{
+  "version": "v1",
+  "config": {
+    "visState": {
+      "filters": [],
+      "layers": [
+        {
+          "id": "ughca9",
+          "type": "point",
+          "config": {
+            "dataId": "pa4ynuys",
+            "label": "House Location",
+            "color": [
+              23,
+              184,
+              190,
+              255
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon",
+              "altitude": null
+            },
+            "isVisible": false,
+            "visConfig": {
+              "radius": 6,
+              "fixedRadius": false,
+              "opacity": 0.8,
+              "outline": false,
+              "thickness": 2,
+              "colorRange": {
+                "name": "ColorBrewer Reds-9",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#fff5f0",
+                  "#fee0d2",
+                  "#fcbba1",
+                  "#fc9272",
+                  "#fb6a4a",
+                  "#ef3b2c",
+                  "#cb181d",
+                  "#a50f15",
+                  "#67000d"
+                ],
+                "reversed": false
+              },
+              "radiusRange": [
+                0,
+                50
+              ],
+              "hi-precision": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "fs6mcz6",
+          "type": "cluster",
+          "config": {
+            "dataId": "pa4ynuys",
+            "label": "House Cluster",
+            "color": [
+              137,
+              218,
+              193
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "clusterRadius": 40,
+              "colorRange": {
+                "name": "ColorBrewer OrRd-9",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#fff7ec",
+                  "#fee8c8",
+                  "#fdd49e",
+                  "#fdbb84",
+                  "#fc8d59",
+                  "#ef6548",
+                  "#d7301f",
+                  "#b30000",
+                  "#7f0000"
+                ],
+                "reversed": false
+              },
+              "radiusRange": [
+                1,
+                40
+              ],
+              "hi-precision": false,
+              "colorAggregation": "average"
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile"
+          }
+        },
+        {
+          "id": "ixg3un",
+          "type": "hexagon",
+          "config": {
+            "dataId": "pa4ynuys",
+            "label": "2d--hexbin-10m",
+            "color": [
+              18,
+              147,
+              154
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "worldUnitSize": 0.01,
+              "resolution": 8,
+              "colorRange": {
+                "name": "ColorBrewer OrRd-9",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#fff7ec",
+                  "#fee8c8",
+                  "#fdd49e",
+                  "#fdbb84",
+                  "#fc8d59",
+                  "#ef6548",
+                  "#d7301f",
+                  "#b30000",
+                  "#7f0000"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "count",
+              "enable3d": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "tws39ql",
+          "type": "hexagon",
+          "config": {
+            "dataId": "pa4ynuys",
+            "label": "2d-hexbin-50m",
+            "color": [
+              221,
+              178,
+              124
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "worldUnitSize": 0.05,
+              "resolution": 8,
+              "colorRange": {
+                "name": "ColorBrewer OrRd-9",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#fff7ec",
+                  "#fee8c8",
+                  "#fdd49e",
+                  "#fdbb84",
+                  "#fc8d59",
+                  "#ef6548",
+                  "#d7301f",
+                  "#b30000",
+                  "#7f0000"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "count",
+              "enable3d": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "qk3kkv",
+          "type": "hexagon",
+          "config": {
+            "dataId": "pa4ynuys",
+            "label": "2d-hexbin-100m",
+            "color": [
+              136,
+              87,
+              44
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "worldUnitSize": 0.1,
+              "resolution": 8,
+              "colorRange": {
+                "name": "ColorBrewer OrRd-9",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#fff7ec",
+                  "#fee8c8",
+                  "#fdd49e",
+                  "#fdbb84",
+                  "#fc8d59",
+                  "#ef6548",
+                  "#d7301f",
+                  "#b30000",
+                  "#7f0000"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "count",
+              "enable3d": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "wm1lsvu",
+          "type": "hexagon",
+          "config": {
+            "dataId": "pa4ynuys",
+            "label": "2d-hexbin-200m",
+            "color": [
+              255,
+              153,
+              31
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "worldUnitSize": 0.2,
+              "resolution": 8,
+              "colorRange": {
+                "name": "ColorBrewer OrRd-9",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#fff7ec",
+                  "#fee8c8",
+                  "#fdd49e",
+                  "#fdbb84",
+                  "#fc8d59",
+                  "#ef6548",
+                  "#d7301f",
+                  "#b30000",
+                  "#7f0000"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "count",
+              "enable3d": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "a8dts4o",
+          "type": "hexagon",
+          "config": {
+            "dataId": "pa4ynuys",
+            "label": "3d-hexbin-10m",
+            "color": [
+              119,
+              110,
+              87
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 1,
+              "worldUnitSize": 0.01,
+              "resolution": 8,
+              "colorRange": {
+                "name": "ColorBrewer OrRd-9",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#fff7ec",
+                  "#fee8c8",
+                  "#fdd49e",
+                  "#fdbb84",
+                  "#fc8d59",
+                  "#ef6548",
+                  "#d7301f",
+                  "#b30000",
+                  "#7f0000"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 0.2,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "average",
+              "enable3d": true
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "85e5lyo",
+          "type": "hexagon",
+          "config": {
+            "dataId": "pa4ynuys",
+            "label": "3d-hexbin-50m",
+            "color": [
+              23,
+              184,
+              190,
+              255
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 1,
+              "worldUnitSize": 0.05,
+              "resolution": 8,
+              "colorRange": {
+                "name": "ColorBrewer OrRd-9",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#fff7ec",
+                  "#fee8c8",
+                  "#fdd49e",
+                  "#fdbb84",
+                  "#fc8d59",
+                  "#ef6548",
+                  "#d7301f",
+                  "#b30000",
+                  "#7f0000"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 0.2,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "average",
+              "enable3d": true
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "sk195tr",
+          "type": "hexagon",
+          "config": {
+            "dataId": "pa4ynuys",
+            "label": "3d-hexbin-100m",
+            "color": [
+              246,
+              209,
+              138
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 1,
+              "worldUnitSize": 0.1,
+              "resolution": 8,
+              "colorRange": {
+                "name": "ColorBrewer OrRd-9",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#fff7ec",
+                  "#fee8c8",
+                  "#fdd49e",
+                  "#fdbb84",
+                  "#fc8d59",
+                  "#ef6548",
+                  "#d7301f",
+                  "#b30000",
+                  "#7f0000"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 1,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "average",
+              "enable3d": true
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "7dvxl9b",
+          "type": "hexagon",
+          "config": {
+            "dataId": "pa4ynuys",
+            "label": "3d-hexbin-200m",
+            "color": [
+              183,
+              136,
+              94
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 1,
+              "worldUnitSize": 0.2,
+              "resolution": 8,
+              "colorRange": {
+                "name": "ColorBrewer OrRd-9",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#fff7ec",
+                  "#fee8c8",
+                  "#fdd49e",
+                  "#fdbb84",
+                  "#fc8d59",
+                  "#ef6548",
+                  "#d7301f",
+                  "#b30000",
+                  "#7f0000"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 2.5,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "average",
+              "enable3d": true
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "118oun1",
+          "type": "geojson",
+          "config": {
+            "dataId": "uek0hper",
+            "label": " Crime Score",
+            "color": [
+              30,
+              150,
+              190,
+              255
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": true,
+            "visConfig": {
+              "opacity": 0.15,
+              "thickness": 2,
+              "colorRange": {
+                "name": "Uber Viz Diverging 2.5",
+                "type": "diverging",
+                "category": "Uber",
+                "colors": [
+                  "#00939C",
+                  "#3EADB3",
+                  "#7CC7CB",
+                  "#BAE1E2",
+                  "#F8C0AA",
+                  "#E68F71",
+                  "#D45F39",
+                  "#C22E00"
+                ],
+                "reversed": false
+              },
+              "radius": 10,
+              "sizeRange": [
+                0,
+                10
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "stroked": false,
+              "filled": true,
+              "enable3d": false,
+              "wireframe": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "Crime Score",
+              "type": "integer"
+            },
+            "colorScale": "quantize",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        },
+        {
+          "id": "92mr0jl",
+          "type": "geojson",
+          "config": {
+            "dataId": "uek0hper",
+            "label": "Income Score",
+            "color": [
+              30,
+              150,
+              190,
+              255
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.15,
+              "thickness": 2,
+              "colorRange": {
+                "name": "ColorBrewer RdPu-8",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#fff7f3",
+                  "#fde0dd",
+                  "#fcc5c0",
+                  "#fa9fb5",
+                  "#f768a1",
+                  "#dd3497",
+                  "#ae017e",
+                  "#7a0177"
+                ],
+                "reversed": false
+              },
+              "radius": 10,
+              "sizeRange": [
+                0,
+                10
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "stroked": false,
+              "filled": true,
+              "enable3d": false,
+              "wireframe": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "Income Score",
+              "type": "integer"
+            },
+            "colorScale": "quantize",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        },
+        {
+          "id": "57swzsk",
+          "type": "geojson",
+          "config": {
+            "dataId": "uek0hper",
+            "label": "Education, Skills and Training Score",
+            "color": [
+              179,
+              173,
+              158,
+              255
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.15,
+              "thickness": 2,
+              "colorRange": {
+                "name": "Uber Viz Sequential 6",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#E6FAFA",
+                  "#C1E5E6",
+                  "#9DD0D4",
+                  "#75BBC1",
+                  "#4BA7AF",
+                  "#00939C",
+                  "#108188",
+                  "#0E7077"
+                ],
+                "reversed": false
+              },
+              "radius": 10,
+              "sizeRange": [
+                0,
+                10
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "stroked": false,
+              "filled": true,
+              "enable3d": false,
+              "wireframe": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "Education, Skills and Training Score",
+              "type": "integer"
+            },
+            "colorScale": "quantize",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        },
+        {
+          "id": "zuef5ga",
+          "type": "geojson",
+          "config": {
+            "dataId": "uek0hper",
+            "label": "Health Deprivation and Disability Score",
+            "color": [
+              231,
+              159,
+              213,
+              255
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.15,
+              "thickness": 2,
+              "colorRange": {
+                "name": "ColorBrewer BuPu-8",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#f7fcfd",
+                  "#e0ecf4",
+                  "#bfd3e6",
+                  "#9ebcda",
+                  "#8c96c6",
+                  "#8c6bb1",
+                  "#88419d",
+                  "#6e016b"
+                ],
+                "reversed": false
+              },
+              "radius": 10,
+              "sizeRange": [
+                0,
+                10
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "stroked": false,
+              "filled": true,
+              "enable3d": false,
+              "wireframe": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "Health Deprivation and Disability Score",
+              "type": "integer"
+            },
+            "colorScale": "quantize",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        },
+        {
+          "id": "a6edcjf",
+          "type": "geojson",
+          "config": {
+            "dataId": "uek0hper",
+            "label": "Living Environment Score",
+            "color": [
+              255,
+              203,
+              153,
+              255
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.15,
+              "thickness": 2,
+              "colorRange": {
+                "name": "ColorBrewer BuGn-8",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#f7fcfd",
+                  "#e5f5f9",
+                  "#ccece6",
+                  "#99d8c9",
+                  "#66c2a4",
+                  "#41ae76",
+                  "#238b45",
+                  "#005824"
+                ],
+                "reversed": false
+              },
+              "radius": 10,
+              "sizeRange": [
+                0,
+                10
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "stroked": false,
+              "filled": true,
+              "enable3d": false,
+              "wireframe": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "Living Environment Score",
+              "type": "integer"
+            },
+            "colorScale": "quantize",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        },
+        {
+          "id": "kog9f6f",
+          "type": "geojson",
+          "config": {
+            "dataId": "uek0hper",
+            "label": "Boundary",
+            "color": [
+              240,
+              237,
+              234,
+              255
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.01,
+              "thickness": 0.1,
+              "colorRange": {
+                "name": "Global Warming",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#5A1846",
+                  "#900C3F",
+                  "#C70039",
+                  "#E3611C",
+                  "#F1920E",
+                  "#FFC300"
+                ]
+              },
+              "radius": 10,
+              "sizeRange": [
+                0,
+                10
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "stroked": true,
+              "filled": false,
+              "enable3d": false,
+              "wireframe": false
+            }
+          },
+          "visualChannels": {
+            "colorField": null,
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        }
+      ],
+      "interactionConfig": {
+        "tooltip": {
+          "fieldsToShow": {
+            "uek0hper": [
+              "Crime Score",
+              "Education, Skills and Training Score",
+              "Health Deprivation and Disability Score",
+              "Income Score",
+              "Living Environment Score"
+            ],
+            "pa4ynuys": [
+              "des",
+              "id",
+              "price"
+            ]
+          },
+          "enabled": true
+        },
+        "brush": {
+          "size": 6.9,
+          "enabled": false
+        }
+      },
+      "layerBlending": "normal",
+      "splitMaps": []
+    },
+    "mapState": {
+      "bearing": 0,
+      "dragRotate": false,
+      "latitude": 52.95715981460512,
+      "longitude": -1.1679957087051775,
+      "pitch": 0,
+      "zoom": 11.206997849122633,
+      "isSplit": false
+    },
+    "mapStyle": {
+      "styleType": "dark",
+      "topLayerGroups": {
+        "label": true
+      },
+      "visibleLayerGroups": {
+        "label": true,
+        "road": true,
+        "border": true,
+        "building": true,
+        "water": true,
+        "land": true
+      },
+      "mapStyles": {}
+    }
+  }
+}

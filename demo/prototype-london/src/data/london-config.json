@@ -1,0 +1,871 @@
+{
+  "version": "v1",
+  "config": {
+    "visState": {
+      "filters": [],
+      "layers": [
+        {
+          "id": "du6qsqq",
+          "type": "point",
+          "config": {
+            "dataId": "cof724fy8",
+            "label": "House Location",
+            "color": [
+              130,
+              154,
+              227,
+              255
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon",
+              "altitude": null
+            },
+            "isVisible": false,
+            "visConfig": {
+              "radius": 2,
+              "fixedRadius": false,
+              "opacity": 0.8,
+              "outline": false,
+              "thickness": 2,
+              "colorRange": {
+                "name": "Uber Viz Diverging 4",
+                "type": "diverging",
+                "category": "Uber",
+                "colors": [
+                  "#00939C",
+                  "#49A6AE",
+                  "#71BABF",
+                  "#97CED1",
+                  "#BAE1E2",
+                  "#FEEEE8",
+                  "#F8C0AA",
+                  "#F2A587",
+                  "#E68059",
+                  "#D55A2B",
+                  "#C22E00"
+                ],
+                "reversed": false
+              },
+              "radiusRange": [
+                0,
+                50
+              ],
+              "hi-precision": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "9c7l0vp",
+          "type": "cluster",
+          "config": {
+            "dataId": "cof724fy8",
+            "label": "House Cluster",
+            "color": [
+              119,
+              110,
+              87,
+              255
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "clusterRadius": 40,
+              "colorRange": {
+                "name": "Uber Viz Diverging 4",
+                "type": "diverging",
+                "category": "Uber",
+                "colors": [
+                  "#00939C",
+                  "#49A6AE",
+                  "#71BABF",
+                  "#97CED1",
+                  "#BAE1E2",
+                  "#FEEEE8",
+                  "#F8C0AA",
+                  "#F2A587",
+                  "#E68059",
+                  "#D55A2B",
+                  "#C22E00"
+                ],
+                "reversed": false
+              },
+              "radiusRange": [
+                0,
+                50
+              ],
+              "hi-precision": false,
+              "colorAggregation": "average"
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile"
+          }
+        },
+        {
+          "id": "s0ccnld",
+          "type": "hexagon",
+          "config": {
+            "dataId": "cof724fy8",
+            "label": "2d-hexbin-500m",
+            "color": [
+              23,
+              184,
+              190
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "worldUnitSize": 0.5,
+              "resolution": 8,
+              "colorRange": {
+                "name": "Uber Viz Diverging 4",
+                "type": "diverging",
+                "category": "Uber",
+                "colors": [
+                  "#00939C",
+                  "#49A6AE",
+                  "#71BABF",
+                  "#97CED1",
+                  "#BAE1E2",
+                  "#FEEEE8",
+                  "#F8C0AA",
+                  "#F2A587",
+                  "#E68059",
+                  "#D55A2B",
+                  "#C22E00"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "count",
+              "enable3d": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "krhnz9l",
+          "type": "hexagon",
+          "config": {
+            "dataId": "cof724fy8",
+            "label": "2d-hexbin-200m",
+            "color": [
+              183,
+              136,
+              94
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "worldUnitSize": 0.2,
+              "resolution": 8,
+              "colorRange": {
+                "name": "Uber Viz Diverging 4",
+                "type": "diverging",
+                "category": "Uber",
+                "colors": [
+                  "#00939C",
+                  "#49A6AE",
+                  "#71BABF",
+                  "#97CED1",
+                  "#BAE1E2",
+                  "#FEEEE8",
+                  "#F8C0AA",
+                  "#F2A587",
+                  "#E68059",
+                  "#D55A2B",
+                  "#C22E00"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "count",
+              "enable3d": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "0avvakj",
+          "type": "hexagon",
+          "config": {
+            "dataId": "cof724fy8",
+            "label": "2d-hexbin-100m",
+            "color": [
+              179,
+              173,
+              158
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "worldUnitSize": 0.1,
+              "resolution": 8,
+              "colorRange": {
+                "name": "Uber Viz Diverging 4",
+                "type": "diverging",
+                "category": "Uber",
+                "colors": [
+                  "#00939C",
+                  "#49A6AE",
+                  "#71BABF",
+                  "#97CED1",
+                  "#BAE1E2",
+                  "#FEEEE8",
+                  "#F8C0AA",
+                  "#F2A587",
+                  "#E68059",
+                  "#D55A2B",
+                  "#C22E00"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "average",
+              "enable3d": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "4080cr1",
+          "type": "hexagon",
+          "config": {
+            "dataId": "cof724fy8",
+            "label": "2d-hexbin-50m",
+            "color": [
+              23,
+              184,
+              190
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "worldUnitSize": 0.05,
+              "resolution": 8,
+              "colorRange": {
+                "name": "Uber Viz Diverging 4",
+                "type": "diverging",
+                "category": "Uber",
+                "colors": [
+                  "#00939C",
+                  "#49A6AE",
+                  "#71BABF",
+                  "#97CED1",
+                  "#BAE1E2",
+                  "#FEEEE8",
+                  "#F8C0AA",
+                  "#F2A587",
+                  "#E68059",
+                  "#D55A2B",
+                  "#C22E00"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "count",
+              "enable3d": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "zy831ib",
+          "type": "hexagon",
+          "config": {
+            "dataId": "cof724fy8",
+            "label": "3d-hexbin-500m",
+            "color": [
+              248,
+              149,
+              112
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "worldUnitSize": 0.5,
+              "resolution": 8,
+              "colorRange": {
+                "name": "Uber Viz Diverging 4",
+                "type": "diverging",
+                "category": "Uber",
+                "colors": [
+                  "#00939C",
+                  "#49A6AE",
+                  "#71BABF",
+                  "#97CED1",
+                  "#BAE1E2",
+                  "#FEEEE8",
+                  "#F8C0AA",
+                  "#F2A587",
+                  "#E68059",
+                  "#D55A2B",
+                  "#C22E00"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 8,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "average",
+              "enable3d": true
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "oe6dvn9",
+          "type": "hexagon",
+          "config": {
+            "dataId": "cof724fy8",
+            "label": "3d-hexbin-200m",
+            "color": [
+              30,
+              150,
+              190
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "worldUnitSize": 0.2,
+              "resolution": 8,
+              "colorRange": {
+                "name": "Uber Viz Diverging 4",
+                "type": "diverging",
+                "category": "Uber",
+                "colors": [
+                  "#00939C",
+                  "#49A6AE",
+                  "#71BABF",
+                  "#97CED1",
+                  "#BAE1E2",
+                  "#FEEEE8",
+                  "#F8C0AA",
+                  "#F2A587",
+                  "#E68059",
+                  "#D55A2B",
+                  "#C22E00"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 8.5,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "average",
+              "enable3d": true
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "7o6nuq",
+          "type": "hexagon",
+          "config": {
+            "dataId": "cof724fy8",
+            "label": "3d-hexbin-100m",
+            "color": [
+              23,
+              184,
+              190
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "worldUnitSize": 0.1,
+              "resolution": 8,
+              "colorRange": {
+                "name": "Uber Viz Diverging 4",
+                "type": "diverging",
+                "category": "Uber",
+                "colors": [
+                  "#00939C",
+                  "#49A6AE",
+                  "#71BABF",
+                  "#97CED1",
+                  "#BAE1E2",
+                  "#FEEEE8",
+                  "#F8C0AA",
+                  "#F2A587",
+                  "#E68059",
+                  "#D55A2B",
+                  "#C22E00"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "average",
+              "enable3d": true
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "pe0123s",
+          "type": "hexagon",
+          "config": {
+            "dataId": "cof724fy8",
+            "label": "3d-hexbin-50m",
+            "color": [
+              136,
+              87,
+              44
+            ],
+            "columns": {
+              "lat": "lat",
+              "lng": "lon"
+            },
+            "isVisible": true,
+            "visConfig": {
+              "opacity": 0.8,
+              "worldUnitSize": 0.05,
+              "resolution": 8,
+              "colorRange": {
+                "name": "Uber Viz Diverging 4",
+                "type": "diverging",
+                "category": "Uber",
+                "colors": [
+                  "#00939C",
+                  "#49A6AE",
+                  "#71BABF",
+                  "#97CED1",
+                  "#BAE1E2",
+                  "#FEEEE8",
+                  "#F8C0AA",
+                  "#F2A587",
+                  "#E68059",
+                  "#D55A2B",
+                  "#C22E00"
+                ],
+                "reversed": false
+              },
+              "coverage": 0.9,
+              "sizeRange": [
+                0,
+                500
+              ],
+              "percentile": [
+                0,
+                100
+              ],
+              "elevationPercentile": [
+                0,
+                100
+              ],
+              "elevationScale": 8.5,
+              "hi-precision": false,
+              "colorAggregation": "average",
+              "sizeAggregation": "average",
+              "enable3d": true
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "colorScale": "quantile",
+            "sizeField": {
+              "name": "price",
+              "type": "integer"
+            },
+            "sizeScale": "linear"
+          }
+        },
+        {
+          "id": "i495cjt",
+          "type": "geojson",
+          "config": {
+            "dataId": "2siaujqy",
+            "label": "London IMD Score",
+            "color": [
+              119,
+              110,
+              87,
+              255
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.8,
+              "thickness": 0,
+              "colorRange": {
+                "name": "ColorBrewer YlGn-9",
+                "type": "sequential",
+                "category": "ColorBrewer",
+                "colors": [
+                  "#ffffe5",
+                  "#f7fcb9",
+                  "#d9f0a3",
+                  "#addd8e",
+                  "#78c679",
+                  "#41ab5d",
+                  "#238443",
+                  "#006837",
+                  "#004529"
+                ],
+                "reversed": false
+              },
+              "radius": 10,
+              "sizeRange": [
+                0,
+                10
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "stroked": false,
+              "filled": true,
+              "enable3d": false,
+              "wireframe": false
+            }
+          },
+          "visualChannels": {
+            "colorField": {
+              "name": "IMD Score",
+              "type": "integer"
+            },
+            "colorScale": "quantize",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        },
+        {
+          "id": "lehfo23",
+          "type": "geojson",
+          "config": {
+            "dataId": "2siaujqy",
+            "label": "Boundary",
+            "color": [
+              255,
+              254,
+              230,
+              255
+            ],
+            "columns": {
+              "geojson": "_geojson"
+            },
+            "isVisible": false,
+            "visConfig": {
+              "opacity": 0.17,
+              "thickness": 0.1,
+              "colorRange": {
+                "name": "Global Warming",
+                "type": "sequential",
+                "category": "Uber",
+                "colors": [
+                  "#5A1846",
+                  "#900C3F",
+                  "#C70039",
+                  "#E3611C",
+                  "#F1920E",
+                  "#FFC300"
+                ]
+              },
+              "radius": 10,
+              "sizeRange": [
+                0,
+                10
+              ],
+              "radiusRange": [
+                0,
+                50
+              ],
+              "heightRange": [
+                0,
+                500
+              ],
+              "elevationScale": 5,
+              "hi-precision": false,
+              "stroked": true,
+              "filled": false,
+              "enable3d": false,
+              "wireframe": false
+            }
+          },
+          "visualChannels": {
+            "colorField": null,
+            "colorScale": "quantile",
+            "sizeField": null,
+            "sizeScale": "linear",
+            "heightField": null,
+            "heightScale": "linear",
+            "radiusField": null,
+            "radiusScale": "linear"
+          }
+        }
+      ],
+      "interactionConfig": {
+        "tooltip": {
+          "fieldsToShow": {
+            "cof724fy8": [
+              "price"
+            ],
+            "2siaujqy": [
+              "IMD Score",
+              "LSOA11NM"
+            ]
+          },
+          "enabled": true
+        },
+        "brush": {
+          "size": 0.5,
+          "enabled": false
+        }
+      },
+      "layerBlending": "normal",
+      "splitMaps": []
+    },
+    "mapState": {
+      "bearing": -23.872340425531917,
+      "dragRotate": true,
+      "latitude": 51.53971045414542,
+      "longitude": -0.13553222576761165,
+      "pitch": 26.219765186693152,
+      "zoom": 10.0936955225641,
+      "isSplit": false
+    },
+    "mapStyle": {
+      "styleType": "dark",
+      "topLayerGroups": {
+        "label": true
+      },
+      "visibleLayerGroups": {
+        "label": true,
+        "road": true,
+        "border": true,
+        "building": true,
+        "water": true,
+        "land": true
+      },
+      "mapStyles": {}
+    }
+  }
+}
